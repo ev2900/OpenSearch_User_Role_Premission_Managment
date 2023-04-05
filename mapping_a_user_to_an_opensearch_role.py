@@ -19,7 +19,7 @@ request_body = [
 ]
 
 map_user_to_IAM_role = requests.patch(
-  opensearch_domain_endpoint.rstrip('/') + '/_plugins/_security/api/rolesmapping/<role_name>',
+  opensearch_domain_endpoint.rstrip('/') + '/_plugins/_security/api/rolesmapping/' + role_name,
   auth = (user_name_auth, password_auth),
   headers = {'Content-type': 'application/json'},
   data = json.dumps(request_body)
