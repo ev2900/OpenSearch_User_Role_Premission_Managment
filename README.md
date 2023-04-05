@@ -1,8 +1,6 @@
 ## Map a user to an OpenSearch role 
 
-The following snippet of Python code maps a user to an OpenSearch role. Users can either be mapped to an OpenSearch role as a user or backend role. To adjust which type a user is mapped as the value of the ```path``` in the request body must be either ```backend_roles``` or ```users```. 
-
-Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
+The following snippet of Python code maps a user to an OpenSearch role. Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
 
 ```
 import requests
