@@ -25,6 +25,9 @@ map_user_to_IAM_role = requests.patch(
 
 print(map_user_to_IAM_role.text)
 ```
+
+You can also reference [mapping_a_user_to_an_opensearch_role.py](https://github.com/ev2900/OpenSearch_User_Role_Premission_Managment/blob/main/mapping_a_user_to_an_opensearch_role.py) for a scripted version of the code sample
+
 ## Removing a user from an OpenSearch role mapping 
 
 The following snippet of Python code removes a user from an OpenSearch role. OpenSearch stores user role mapping as separate lists for backend roles and users. Unfortunately the HTTP ```PATCH``` operation does not support removing an object from a list using the value name of the object. Instead ```PATCH``` supports deleting objects based on the index ie. position of the object in the list. Consequently the Python code snippet below has two parts. The first part finds the index position of the user. The second part uses the index position to remove the user from the role mapping.
