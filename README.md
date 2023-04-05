@@ -69,3 +69,5 @@ map_user_to_IAM_role = requests.patch(
 
 print(map_user_to_IAM_role.text)
 ```
+
+You can also reference [removing_a_user_from_an_opensearch_role_mapping.py](https://github.com/ev2900/OpenSearch_User_Role_Premission_Managment/blob/main/removing_a_user_from_an_opensearch_role_mapping.py) for a scripted version of the code sample
