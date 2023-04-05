@@ -1,6 +1,8 @@
 ## Map a user to an OpenSearch role 
 
-The following snippet of Python code maps a user to an OpenSearch role. Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
+The following snippet of Python code maps a user to an OpenSearch role. 
+
+Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
 
 ```
 import requests
