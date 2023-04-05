@@ -1,1 +1,1 @@
-# OpenSearch User Role APIs Examples
+# OpenSearch User Role APIs
