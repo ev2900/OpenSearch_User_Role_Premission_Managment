@@ -1,3 +1,31 @@
+## Create a user
+
+The following snippet of python code creats a new OpenSearch user. 
+
+Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
+
+```
+import requests
+import json
+
+request_body = {
+		"password": "<password_for_new_user_must_have_1_lower_1_upper_1_number_1_special_character>", 
+		"opendistro_security_roles": ["<role_name>"],
+		"backend_roles": ["<role_name>"]
+}
+
+create_user = requests.put(
+  '<open_search_domain_endpoint>/_plugins/_security/api/internalusers/<user_name_for_new_user>',
+  auth = ('<user_name>', '<password>'),
+  headers = {'Content-type': 'application/json'},
+  data = json.dumps(request_body)
+)
+
+print(create_user.text)
+```
+
+You can also reference [create_a_user.py](https://github.com/ev2900/OpenSearch_User_Role_Premission_Managment/blob/main/create_a_user.py) for a scripted version of the code sample
+
 ## Mapping a user to an OpenSearch role 
 
 The following snippet of python code maps a user to an OpenSearch role. 
@@ -60,14 +88,14 @@ request_body = [
 	}
 ]
 
-map_user_to_IAM_role = requests.patch(
+remove_user_to_IAM_role = requests.patch(
   'https://<open_search_domain_endpoint>/_plugins/_security/api/rolesmapping/<role_name>',
   auth = ('<user_name>', '<password>'),
   headers = {'Content-type': 'application/json'},
   data = json.dumps(request_body)
 )
 
-print(map_user_to_IAM_role.text)
+print(remove_user_to_IAM_role.text)
 ```
 
 You can also reference [removing_a_user_from_an_opensearch_role_mapping.py](https://github.com/ev2900/OpenSearch_User_Role_Premission_Managment/blob/main/removing_a_user_from_an_opensearch_role_mapping.py) for a scripted version of the code sample
