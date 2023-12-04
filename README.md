@@ -1,5 +1,7 @@
 ## Create a user
 
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+
 The following snippet of python code creats a new OpenSearch user. 
 
 Before running the code snippet ensure you update any value surrounded by ```< >``` brackets
