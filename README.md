@@ -1,6 +1,6 @@
 ## Create a user
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-317-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-127-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-319-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-127-green">
 
 The following snippet of python code creats a new OpenSearch user.
 
